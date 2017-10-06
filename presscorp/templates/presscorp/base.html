@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load staticfiles %}
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <script src="{% static 'presscorp/jquery-3.1.1.min.js' %}"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    {% block script %}<script src="{% static 'webhappy/script.js' %}"></script> {% endblock %}
+    <link rel="stylesheet" type="text/css" href="{% static 'presscorp/style.css' %}" />
+    <link rel="icon" href="{% static 'presscorp/images/favicon-PC-2017.jpg'%}">
+    <title>{% block title %} ПрессКорп - Design & Digital {% endblock %}</title>
+</head>
+<header>
+    hi
+</header>
+<body>
+{% block content %}
+{% endblock %}
+</body>
+<footer>
+</footer>

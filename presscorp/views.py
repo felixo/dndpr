@@ -1,6 +1,25 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
-from __future__ import unicode_literals
-
 from django.shortcuts import render
+#from .models import MainPage, Slider, Partner, Wwd, Video, How_to_help, Media, Media_images, About, We_cares
+from django.shortcuts import render_to_response
+from django.template import RequestContext
+#from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
-# Create your views here.
+def handler404(request):
+    response = render_to_response('404.html', {},
+                                  context_instance=RequestContext(request))
+    response.status_code = 404
+    return response
+
+
+def handler500(request):
+    response = render_to_response('500.html', {},
+                                  context_instance=RequestContext(request))
+    response.status_code = 500
+    return response
+
+def index(request):
+    print 'hi mark'
+    x = 1
+    return render(request, 'presscorp/index.html', {'x': x})
