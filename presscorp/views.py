@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 from django.shortcuts import render
-#from .models import MainPage, Slider, Partner, Wwd, Video, How_to_help, Media, Media_images, About, We_cares
+from .models import Slider #Partner, Wwd, Video, How_to_help, Media, Media_images, About, We_cares, MainPage
 from django.shortcuts import render_to_response
 from django.template import RequestContext
 #from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
@@ -20,6 +20,5 @@ def handler500(request):
     return response
 
 def index(request):
-    print 'hi mark'
-    x = 1
-    return render(request, 'presscorp/index.html', {'x': x})
+    slider = Slider.objects.all()
+    return render(request, 'presscorp/index.html', {'slider': slider})

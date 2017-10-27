@@ -3,9 +3,18 @@
 {% load static %}
 {% block title %} ПрессКорп - Design & Digital {% endblock %}
 {% block content %}
-<div class="carusel">
-  <div>your content</div>
-  <div>your content</div>
-  <div>your content</div>
+<div class="carusel_wrap">
+  <div class="carusel">
+    {% for x in slider %}
+      <div>
+        <img data-u="image" src="{{ x.img.url }}" />
+        <div class="overlay"></div>
+      </div>
+    {% endfor %}
+  </div>
+  <div class="typer_wrap">
+    <span class="typer_const">we are</span>
+    <span class="typer"></span>
+  </div>
 </div>
 {% endblock %}

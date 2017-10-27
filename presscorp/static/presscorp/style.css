@@ -49,6 +49,7 @@ header {
     background: white;
     padding: 15px 0;
     position: relative;
+    max-height: 80px;
 }
 
 nav {
@@ -67,7 +68,7 @@ nav {
 /* меню */
 #menu {
     float: right;
-    padding-top: 7px;
+    padding-top: 4px;
 }
 
 #menu li {
@@ -130,6 +131,52 @@ nav {
 /* класс, который будет добавлен в верхнему меню при нажатии на кнопку и покажет скрытое меню*/
 #menu.active {
     max-height: 231px;
+}
+
+.carusel_wrap {
+    text-align: center;
+    position: relative;
+}
+
+.typer_wrap {
+    position: absolute;
+    top: 41%;
+    left: 28%;
+}
+
+.typer_const {
+    font-family: 'Roboto', sans-serif;
+    font-size: 8vw;
+    color: white;
+}
+
+.typer {
+    font-family: 'Roboto', sans-serif;
+    font-size: 8vw;
+    color: #bfd732;
+}
+
+.typed-cursor {
+    font-family: 'Roboto', sans-serif;
+    font-size: 8vw;
+    color: #bfd732;
+}
+
+/* If fade out option is set */
+.typed-fade-out {
+    font-family: 'Roboto', sans-serif;
+    font-size: 8vw;
+    color: #bfd732;
+}
+
+.overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(1, 1, 1, .1);
+    transition: 0.2s;
 }
 
 @media (max-width: 768px) {

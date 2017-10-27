@@ -8,23 +8,23 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <script src="{% static 'presscorp/jquery-3.1.1.min.js' %}"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    {% block script %}<script src="{% static 'presscorp/script.js' %}"></script> {% endblock %}
+    {% block script %}
+        <script src="{% static 'presscorp/script.js' %}"></script>
+    {% endblock %}
     <link rel="stylesheet" type="text/css" href="{% static 'presscorp/style.css' %}" />
     <link rel="icon" href="{% static 'presscorp/images/favicon-PC-2017.jpg'%}">
     <!-- Add the slick-theme.css if you want default styling -->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
     <!-- Add the slick-theme.css if you want default styling -->
-<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
     <title>{% block title %} ПрессКорп - Design & Digital {% endblock %}</title>
 </head>
-<script>
-
-</script>
+<script src="{% static 'presscorp/typed.js' %}"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
 <header>
     <nav class="container">
         <a class="logo" href="/">
             <img src="{% static 'presscorp/images/logo.png' %}" alt="presscorp logo">
-
         </a>
         <div class="nav-toggle"><span></span></div>
         <ul id="menu">
