@@ -41,5 +41,56 @@
 {% endblock %}
 </body>
 <footer>
-    <div></div>
+    <ul id="footer_list">
+        <li class="footer_list_dot">
+            <h1>НАШИ КОНТАКТЫ</h1>
+        </li>
+        <li class="footer_list_dot">
+            <ul id="social_list">
+                <li class="social_dot">
+                    <a href="{{ web.fb}}">
+                        <img src="{% static 'presscorp/images/fb_social_black.png' %}" alt="fb_social_black">
+                    </a>
+                </li>
+                <li class="social_dot">
+                    <a href="{{ web.vk}}">
+                        <img src="{% static 'presscorp/images/vk_social_black.png' %}" alt="vk_social_black">
+                    </a>
+                </li>
+                <li class="social_dot" id="insta">
+                    <a href="{{ web.insta}}">
+                        <img src="{% static 'presscorp/images/inst_social_black.png' %}" alt="isnstagram_social_black">
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li class="footer_list_dot">
+            <ul class="contact_list">
+                <li class="contact_dot">
+                    <span>E-mail: </span><a href="mailto:{{web.email}}">{{ web.email }}</a>
+                </li>
+                <li class="contact_dot">
+                    <span>Телефон: </span><a href="tel:{{web.phone}}">{{ web.phone }}</a>
+                </li>
+                <li class="contact_dot">
+                    <span>Адрес: </span><span id="address">{{ web.adress }}</span>
+                </li>
+            </ul>
+        </li>
+        <li class="footer_list_dot">
+            <ul class="low_menu_list">
+                <li class="low_menu_dot"><a href="">ДИЗАЙН</a></li>
+                <li class="low_menu_dot"><a href="">WEB</a></li>
+                <li class="low_menu_dot"><a href="">МЕДИА</a></li>
+                <li class="low_menu_dot"><a href="">КРЕАТИВ</a></li>
+                <li class="low_menu_dot"><a href="">КОНТАКТЫ</a></li>
+            </ul>
+        </li>
+        <li class="footer_list_dot">
+            <div class="make_order"><a href="">СДЕЛАТЬ ЗАКАЗ</a></div>
+        </li>
+        <li class="footer_list_dot">
+            <div class="footer_logo"><a href=""><img src="{% static 'presscorp/images/logo.png' %}" alt="presscorp logo"></a></div>
+        </li>
+    </ul>
 </footer>
