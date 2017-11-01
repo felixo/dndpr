@@ -36,8 +36,11 @@ header:after, .container:after, footer:after, .widget-posts-list li:after, #subs
 .container {
     margin: 0 auto;
     width: 100%;
-    max-width: 960px;
     padding: 0 15px;
+    position: fixed;
+    z-index: 999;
+    height: 80px;
+    background-color: white;
 }
 
 #menu {
@@ -47,9 +50,10 @@ header:after, .container:after, footer:after, .widget-posts-list li:after, #subs
 header {
     width: 100%;
     background: white;
-    padding: 15px 0;
+    padding: 0px 0;
     position: relative;
     max-height: 80px;
+    height: 80px;
 }
 
 nav {
@@ -62,13 +66,15 @@ nav {
     display: block;
     float: left;
     width: 156px;
-    padding-top: 8px;
+    padding-top: 30px;
+    margin-left: 50px;
 }
 
 /* меню */
 #menu {
     float: right;
-    padding-top: 4px;
+    padding-top: 25px;
+    margin-right: 50px;
 }
 
 #menu li {
@@ -102,6 +108,7 @@ nav {
     margin-left: 20px;
     background: black;
     cursor: pointer;
+    margin-top: 19px;
 }
 
 .nav-toggle span {
@@ -127,6 +134,14 @@ nav {
 }
 .nav-toggle span:after {
     bottom: -10px;
+}
+
+.nav-toggle .changed:before {
+    background-color: black;
+}
+
+.nav-toggle .changed:after {
+    background-color: black;
 }
 /* класс, который будет добавлен в верхнему меню при нажатии на кнопку и покажет скрытое меню*/
 #menu.active {
@@ -224,6 +239,7 @@ h1 {
     vertical-align: middle;
     border-radius: 30px;
     padding-top: 12px;
+    letter-spacing: 1px;
 }
 
 .green_button:hover {
@@ -236,7 +252,7 @@ h1 {
 display: block;
 }
 header {
-padding: 10px 0;
+padding: 0px 0;
 }
 /* скрываем верхнее меню, отменяем обтекание, позиционируем его, сместив на высоту шапки сайта */
 #menu {
@@ -269,6 +285,11 @@ margin-right: 0;
 width: 100%;
 float: none;
 }
+
+.logo {
+    margin-left: 15px;
+}
+
 .widget-post-title {
 font-size: 1.5em;
 }
@@ -282,10 +303,11 @@ text-align: center;
 .logo {
 
 margin-bottom: 15px;
+margin-left: 15px;
 }
 /* позиционируем меню на увеличившуюся высоту шапки */
 #menu {
-top: 118px;
+
 }
 /* позиционируем форму поиска по левому краю */
 
