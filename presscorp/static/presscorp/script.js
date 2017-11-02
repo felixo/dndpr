@@ -59,4 +59,23 @@
         if($(this).width() > 768 && $(document).scrollTop() < 20) { jQuery('#menu a').css({"color":"black"}); }
         else { jQuery('#menu a').css({"color":"white"});}
      });
+
+     $('#footer_fb_img img').hover(
+            function() {
+                $(this).attr('src','static/presscorp/images/fb_social_green.png');
+            },
+            function() {
+                $(this).attr('src','static/presscorp/images/fb_social_black.png');
+            }
+     );
+     $('#footer_vk_img img').hover(
+            function() {
+                $(this).attr('src','static/presscorp/images/vk_social_green.png');
+            },
+            function() {
+                $(this).attr('src','static/presscorp/images/vk_social_black.png');
+            }
+     );
+
+
  });
